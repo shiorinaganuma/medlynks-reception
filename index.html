@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>CA Medlynks Reception</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<style>
+  html, body { margin: 0; height: 100%; background: #ffffff; overflow: hidden; }
+  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
+</style>
+</head>
+<body>
+<!-- 受付タブレットを全画面で出すための入れ物。中身は Apps Script の受付ページ（Code.js の doGet） -->
+<iframe src="https://script.google.com/a/macros/connectafya.com/s/AKfycbwVBDuHw4M2nrCfkttvt4nV8RxkbiLti1vSXM5KZtb0OVduy1npt9qISlAyFIalM_4l/exec"
+        allow="fullscreen" title="CA Medlynks Reception Check-in"></iframe>
+<script>
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+</script>
+</body>
+</html>
